@@ -15,7 +15,7 @@ namespace BTHospitalFix
         public static float CalcChance(float minchance, float basechance, float gutsReduction, float gutsAmount, SimGameState s, Pilot p)
         {
             float statmodifier = p.LethalInjuries ? GetStat(s, "LethalDeathChance") : GetStat(s, "IncapacitatedDeathChance");
-            return Math.Max(minchance, basechance - gutsReduction * gutsAmount - statmodifier);
+            return Math.Max(minchance, basechance - gutsReduction * gutsAmount + statmodifier);
         }
 
         public static float GetStat(SimGameState s, string stat)
