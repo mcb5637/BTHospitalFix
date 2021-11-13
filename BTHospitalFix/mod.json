@@ -1,0 +1,11 @@
+﻿{
+  "Name": "BTSimpleMechAssembly",
+  "Enabled": true,
+
+  "Version": "1.0.0.0",
+  "Description": "",
+  "Author": "mcb",
+  "Website": "https://github.com/mcb5637/BTHospitalFix",
+
+  "DLL": "BTHospitalFix.dll"
+}
